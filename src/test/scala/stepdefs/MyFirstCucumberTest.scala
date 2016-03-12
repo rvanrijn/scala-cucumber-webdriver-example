@@ -3,17 +3,17 @@ package stepdefs
 import java.util.concurrent.TimeUnit
 
 import cucumber.api.scala.{EN, ScalaDsl}
-import org.openqa.selenium.firefox.FirefoxDriver
+import org.openqa.selenium.chrome.ChromeDriver
 import org.openqa.selenium.support.ui.{ExpectedConditions, FluentWait, Wait}
 import org.openqa.selenium.{By, WebDriver}
 import org.scalatest.Matchers
 
 class MyFirstCucumberTest extends ScalaDsl with EN with Matchers {
 
-  val driver = new FirefoxDriver()
+  val driver = new ChromeDriver()
 
   val fluentWait: Wait[WebDriver] = new FluentWait[WebDriver](driver)
-    .withTimeout(6, TimeUnit.SECONDS)
+    .withTimeout(10, TimeUnit.SECONDS)
     .pollingEvery(1, TimeUnit.SECONDS)
 
   Given( """^I have navigated to google$""") { () =>

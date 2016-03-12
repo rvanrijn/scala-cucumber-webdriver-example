@@ -8,7 +8,7 @@ import org.junit.runner.RunWith
 @CucumberOptions(
   features = Array("src/test/resources/features"),
   glue = Array("stepdefs"),
-  plugin = Array("pretty"),
+  plugin = Array("pretty", "html:target/cucumber-report"),
   tags = Array("@wip")
 )
 class RunCucumber {

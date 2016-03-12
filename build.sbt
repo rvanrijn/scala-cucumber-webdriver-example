@@ -1,9 +1,9 @@
 name := "my_first_cucumber_test"
 
-scalaVersion := "2.11.5"
+scalaVersion := "2.11.6"
 
 libraryDependencies ++= Seq(
-  "org.seleniumhq.selenium" % "selenium-java" % "2.46.0",
+  "org.seleniumhq.selenium" % "selenium-java" % "2.50.0",
   "org.scalatest" % "scalatest_2.11" % "2.2.1",
   "org.pegdown" % "pegdown" % "1.4.2" % "test",
   "org.scala-lang" % "scala-library" % "2.11.2",
